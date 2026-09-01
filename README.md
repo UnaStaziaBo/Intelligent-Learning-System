@@ -2,7 +2,7 @@
 
 An AI-powered web application that turns test-response data and course materials into personalised learning support for students preparing for retake examinations.
 
-This repository contains the practical part of the Bachelor's thesis **“Intelligent System for Supporting Personalized Learning”** by **Bc. Anastasiia Borodina**, defended at the [Technical University of Košice](https://www.linkedin.com/company/tuke/). Watch the project presentation: [YouTube video](https://youtu.be/gEvnWakidh4?si=whhpfFm5DatxxE_v).
+This repository contains the practical part of the Bachelor's thesis **“Intelligent System for Supporting Personalized Learning”** by **Bc. Anastasiia Borodina**, defended at the [Technical University of Košice](https://www.linkedin.com/company/tuke/). Explore the [live application](https://learn.unastazia.com/) or watch the [project presentation](https://youtu.be/gEvnWakidh4?si=whhpfFm5DatxxE_v).
 
 > Building an AI application is not simply a matter of connecting a language model. It means designing a dependable software system in which AI is one component of a wider architecture. This project explores that balance: strong engineering, transparent processing, and learning support tailored to individual needs.
 
