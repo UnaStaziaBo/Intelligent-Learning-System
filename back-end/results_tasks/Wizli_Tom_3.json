@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "Otazka": "Aký je hlavný účel vykonávania skupiny databázových príkazov ako jednej jednotky? \n\n ◉ Odpovedzte čo najsprávnejšie, všetko vyjde!",
+      "Odpoved": "Hlavným účelom je zabezpečiť, aby sa všetky príkazy vykonali spoločne a v prípade chyby sa vrátili späť, čím sa zachová konzistencia dát."
+    },
+    {
+      "Otazka": "Ktorý príkaz v PostgreSQL slúži na začatie práce s databázovou jednotkou operácií? \n\n ◉ Po svojej odpovedi prečítajte správnu odpoveď rýchlejšie, pomalšie, so záujmom, s iróniou, šeptom.",
+      "Odpoved": "Príkaz BEGIN slúži na spustenie transakcie, teda na začatie skupiny operácií, ktoré sa vykonávajú ako jedna celistvá jednotka."
+    },
+    {
+      "Otazka": "Ako sa v PostgreSQL označuje príkaz, ktorý potvrdí všetky zmeny vykonané v rámci transakcie? \n\n ◉ Odpovedzte na otázku a potom vymyslite jedno slovo, ktoré najlepšie vystihuje túto tému.",
+      "Odpoved": "Príkaz COMMIT potvrdí všetky zmeny a trvalo ich uloží do databázy."
+    },
+    {
+      "Otazka": "Čo umožňuje príkaz ROLLBACK v kontexte databázových operácií? \n\n ◉ Odpoveď používajte iba ako základ, potom doplňte popis sami.",
+      "Odpoved": "ROLLBACK umožňuje vrátiť všetky zmeny vykonané počas aktuálnej transakcie späť do pôvodného stavu."
+    },
+    {
+      "Otazka": "Na čo slúži príkaz SAVEPOINT v rámci transakcie? \n\n ◉ Obnovte informačný rozdiel do tejto odpovede.",
+      "Úloha": "SAVEPOINT _________ _________ _________ _________ ku ktorému je možné sa vrátiť bez nutnosti zrušiť celú transakciu.",
+      "Odpoved": "SAVEPOINT vytvára bod v transakcii, ku ktorému je možné sa vrátiť bez nutnosti zrušiť celú transakciu."
+    },
+    {
+      "Otazka": "Prečo je dôležité, aby transakcie zabezpečovali izoláciu vykonávaných príkazov? \n\n ◉ Odpovedzte na otázku a vyznačte hlavné body, ako keby ste ich kreslili na schéme.",
+      "Odpoved": "Izolácia zabezpečuje, že súčasné operácie neovplyvnia navzájom svoje výsledky, čím sa predchádza nekonzistentným dátam."
+    },
+    {
+      "Otazka": "Čo znamená, že PostgreSQL používa režim autocommit? \n\n ◉ Doplňte chýbajúce slová do odpovede.",
+      "Úloha": "V _________ autocommit sa _________ jednotlivý príkaz _________ považuje za _________ transakciu, ktorá _________ po vykonaní _________ potvrdí.",
+      "Odpoved": "V režime autocommit sa každý jednotlivý príkaz automaticky považuje za samostatnú transakciu, ktorá sa po vykonaní automaticky potvrdí."
+    },
+    {
+      "Otazka": "Ako transakcie prispievajú k odolnosti databázy voči systémovým zlyhaniam? \n\n ◉ Dopíšte túto odpoveď do konca.",
+      "Úloha": "Transakcie zabezpečujú, že v prípade zlyhania sa vykonajú buď _________ _________ _________ _________ _________ _________ _________ _________ _________",
+      "Odpoved": "Transakcie zabezpečujú, že v prípade zlyhania sa vykonajú buď všetky zmeny, alebo žiadne, čím sa zabráni poškodeniu dát."
+    },
+    {
+      "Otazka": "Čo sa stane s neukončenou transakciou po ukončení databázovej relácie? \n\n ◉ nkrem tejto odpovede zapíšte všetky informácie, ktoré si k tejto téme pamätáte.",
+      "Odpoved": "Neukončená transakcia sa automaticky ukončí a zmeny sa buď potvrdia, alebo zrušia podľa nastavenia."
+    },
+    {
+      "Otazka": "Aký je význam sekvenčného vykonávania príkazov v rámci jednej transakcie? \n\n ◉ Prečítajte si odporúčanú literatúru ešte raz a osviežte si svoje vedomosti.",
+      "Odpoved": "Sekvenčné vykonávanie zabezpečuje, že príkazy sa spracujú v presnom poradí, čo je dôležité pre správnu logiku a konzistenciu operácií."
+    }
+  ],
+  "sources": [
+    "uploads/data/10-Transakcie.pdf:8:0",
+    "uploads/data/10-Transakcie.pdf:4:0",
+    "uploads/data/10-Transakcie.pdf:7:0"
+  ]
+}

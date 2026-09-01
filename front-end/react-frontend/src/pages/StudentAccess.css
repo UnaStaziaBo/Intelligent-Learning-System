@@ -1,0 +1,186 @@
+.student-access-wrapper {
+    width: 100%;
+    min-height: calc(100vh - 210px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 1rem;
+}
+
+.student-access-card {
+    background: #ffffff;
+    padding: 2.5rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+}
+
+.student-access-title {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.student-access-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+.student-access-field input {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #9bb598;
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+.student-access-field input:focus {
+    border: 1px solid #3c5d3c;
+}
+
+.student-access-hint {
+    font-size: 0.8rem;
+    color: #444;
+}
+
+.student-access-btn {
+    width: 100%;
+    border-radius: 999px;
+    padding: 0.75rem 2rem;
+    border: 1px solid #9bb598;
+    background-color: #f8fbf6;
+    color: #2f3e2f;
+    font-size: 0.95rem;
+    cursor: pointer;
+    margin-top: 0.8rem;
+    transition: all 0.2s ease;
+}
+
+.student-access-btn:hover {
+    background-color: #eef4ea;
+    border-color: #4f6e43;
+    color: #1f2a1f;
+}
+
+.student-access-error {
+    margin: 1rem 0;
+    color: #b00020;
+    font-size: 0.9rem;
+}
+
+.student-access-results {
+    margin-top: 1.5rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid #eee;
+    text-align: left;
+}
+
+.student-access-hello {
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.student-access-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    margin-top: 0.8rem;
+}
+
+.student-access-link {
+    padding: 0.9rem;
+    border-radius: 8px;
+    border: 1px solid #9bb598;
+    cursor: pointer;
+    background: #ffffff;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.student-access-link:hover {
+    background: #f3f7f2;
+    border-color: #3c5d3c;
+}
+
+.student-access-mini {
+    margin-top: 1.2rem;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+
+body.dark .student-access-wrapper {
+  color: var(--color--primary-black);
+}
+
+body.dark .student-access-card {
+  background: rgba(19, 21, 20, 0.92);
+  border: 1px solid rgba(155, 181, 152, 0.22);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(10px);
+}
+
+body.dark .student-access-title {
+  color: rgba(237, 239, 234, 0.95);
+}
+
+body.dark .student-access-hint,
+body.dark .student-access-mini {
+  color: rgba(237, 239, 234, 0.62);
+}
+
+body.dark .student-access-field input {
+  background: rgba(18, 22, 20, 0.92);
+  color: rgba(237, 239, 234, 0.92);
+  border: 1px solid rgba(155, 181, 152, 0.30);
+}
+
+body.dark .student-access-field input::placeholder {
+  color: rgba(237, 239, 234, 0.45);
+}
+
+body.dark .student-access-field input:focus {
+  border-color: rgba(155, 181, 152, 0.75);
+  box-shadow: 0 0 0 3px rgba(155, 181, 152, 0.22);
+}
+
+body.dark .student-access-btn {
+  background-color: rgba(237, 239, 234, 0.10);
+  color: rgba(237, 239, 234, 0.92);
+  border: 1px solid rgba(237, 239, 234, 0.25);
+}
+
+body.dark .student-access-btn:hover {
+  background-color: rgba(155, 181, 152, 0.14);
+  border-color: rgba(155, 181, 152, 0.55);
+}
+
+body.dark .student-access-error {
+  color: rgba(255, 120, 150, 0.95);
+}
+
+body.dark .student-access-results {
+  border-top: 1px solid rgba(155, 181, 152, 0.18);
+}
+
+body.dark .student-access-hello {
+  color: rgba(237, 239, 234, 0.92);
+}
+
+body.dark .student-access-link {
+  background: rgba(18, 22, 20, 0.92);
+  border: 1px solid rgba(155, 181, 152, 0.28);
+  color: rgba(237, 239, 234, 0.92);
+}
+
+body.dark .student-access-link:hover {
+  background: rgba(155, 181, 152, 0.12);
+  border-color: rgba(155, 181, 152, 0.55);
+}

@@ -1,0 +1,261 @@
+.walkthrough-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+
+    background: rgba(146, 169, 129, 0.22);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem;
+}
+
+.walkthrough-header {
+    padding: 1rem 1.8rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    text-align: center;
+
+    background: rgba(146, 169, 129, 0.18);
+    border-bottom: 1px solid rgba(34, 34, 34, 0.08);
+}
+
+body.dark .walkthrough-header {
+    background: rgba(155, 181, 152, 0.12);
+    border-bottom: 1px solid rgba(155, 181, 152, 0.18);
+}
+
+.walkthrough-card {
+    width: 95%;
+    max-width: 600px;
+
+    background: var(--color--primary-white);
+    color: var(--color--primary-black);
+
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(34, 34, 34, 0.12);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.18);
+
+    overflow: hidden;
+    animation: walkthroughFadeIn 0.25s ease-out;
+}
+
+.walkthrough-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: contain;
+
+    background: rgba(231, 241, 221, 0.55);
+    border-bottom: 1px solid rgba(34, 34, 34, 0.08);
+}
+
+.walkthrough-card h3 {
+    margin: 0;
+    padding: 1.4rem 1.8rem 0.55rem;
+
+    font-size: 1.65rem;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.walkthrough-card p {
+    margin: 0;
+    padding: 0 1.8rem 1.4rem;
+
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: var(--color--muted);
+}
+
+.walkthrough-card ul {
+    padding-left: 18px;
+    margin: 8px 0 0;
+}
+
+.walkthrough-card li {
+    margin: 6px 0;
+}
+
+.walkthrough-actions {
+    padding: 0 1.8rem 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.walkthrough-actions button {
+    border-radius: 999px;
+    padding: 0.95rem 1.45rem;
+    font-size: 1rem;
+    font-weight: 600;
+    min-height: 52px;
+
+    cursor: pointer;
+    font-family: inherit;
+
+    transition:
+        transform 0.06s ease,
+        box-shadow 0.18s ease,
+        background 0.18s ease,
+        border-color 0.18s ease,
+        color 0.18s ease,
+        opacity 0.18s ease;
+}
+
+.walkthrough-actions button:active {
+    transform: scale(0.98);
+}
+
+.walkthrough-actions button:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+    box-shadow: none;
+}
+
+.walkthrough-actions button:only-child {
+    margin-left: auto;
+    min-width: 180px;
+}
+
+/* Back */
+.walkthrough-actions button:first-child:not(:only-child) {
+    background: var(--color--primary-white);
+    color: var(--color--accent);
+    border: 1px solid rgba(146, 169, 129, 0.45);
+    min-width: 120px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.walkthrough-actions button:first-child:not(:only-child):hover {
+    background: rgba(231, 241, 221, 0.65);
+    border-color: rgba(146, 169, 129, 0.72);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Next / Start */
+.walkthrough-actions button:last-child,
+.walkthrough-actions button:only-child {
+    background: rgba(174, 197, 157, 0.28);
+    color: var(--color--accent);
+    border: 1px solid rgba(146, 169, 129, 0.72);
+    min-width: 170px;
+    box-shadow: 0 8px 22px rgba(146, 169, 129, 0.16);
+}
+
+.walkthrough-actions button:last-child:hover,
+.walkthrough-actions button:only-child:hover {
+    background: rgba(174, 197, 157, 0.42);
+    border-color: rgba(146, 169, 129, 0.9);
+    box-shadow: 0 12px 26px rgba(146, 169, 129, 0.22);
+}
+
+/* DARK */
+body.dark .walkthrough-overlay {
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(12px);
+}
+
+body.dark .walkthrough-card {
+    background: rgba(19, 21, 20, 0.92);
+    border: 1px solid rgba(155, 181, 152, 0.22);
+    box-shadow: 0 18px 54px rgba(0, 0, 0, 0.58);
+}
+
+body.dark .walkthrough-card img {
+    background: rgba(155, 181, 152, 0.10);
+    border-bottom: 1px solid rgba(155, 181, 152, 0.18);
+}
+
+body.dark .walkthrough-card h3 {
+    color: rgba(237, 239, 234, 0.95);
+}
+
+body.dark .walkthrough-card p {
+    color: rgba(237, 239, 234, 0.68);
+}
+
+body.dark .walkthrough-actions button:first-child:not(:only-child) {
+    background: rgba(18, 22, 20, 0.92);
+    color: rgba(237, 239, 234, 0.92);
+    border: 1px solid rgba(155, 181, 152, 0.28);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.24);
+}
+
+body.dark .walkthrough-actions button:first-child:not(:only-child):hover {
+    background: rgba(155, 181, 152, 0.10);
+    border-color: rgba(155, 181, 152, 0.52);
+}
+
+body.dark .walkthrough-actions button:last-child,
+body.dark .walkthrough-actions button:only-child {
+    background: rgba(155, 181, 152, 0.16);
+    color: rgba(237, 239, 234, 0.95);
+    border: 1px solid rgba(155, 181, 152, 0.40);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.30);
+}
+
+body.dark .walkthrough-actions button:last-child:hover,
+body.dark .walkthrough-actions button:only-child:hover {
+    background: rgba(155, 181, 152, 0.22);
+    border-color: rgba(155, 181, 152, 0.62);
+}
+
+@keyframes walkthroughFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px) scale(0.985);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (max-width: 900px) {
+    .walkthrough-card {
+        max-width: 720px;
+    }
+
+    .walkthrough-card img {
+        height: 360px;
+    }
+}
+
+@media (max-width: 600px) {
+    .walkthrough-overlay {
+        padding: 1.25rem;
+    }
+
+    .walkthrough-card img {
+        height: 240px;
+    }
+
+    .walkthrough-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .walkthrough-card p {
+        font-size: 0.98rem;
+        line-height: 1.6;
+    }
+
+    .walkthrough-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .walkthrough-actions button,
+    .walkthrough-actions button:first-child:not(:only-child),
+    .walkthrough-actions button:last-child,
+    .walkthrough-actions button:only-child {
+        width: 100%;
+        min-width: 0;
+        margin-left: 0;
+    }
+}

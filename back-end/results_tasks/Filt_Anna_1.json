@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "Otazka": "Na čo slúži funkcia na prevod textu do malých písmen? \n\n ◉ Odpovedzte čo najsprávnejšie, všetko vyjde!",
+      "Odpoved": "Táto funkcia zmení všetky znaky v texte na malé písmená."
+    },
+    {
+      "Otazka": "Ako môžem zmeniť veľké písmená v reťazci na malé pomocou SQL? \n\n ◉ Po svojej odpovedi prečítajte správnu odpoveď rýchlejšie, pomalšie, so záujmom, s iróniou, šeptom.",
+      "Odpoved": "Použitím funkcie lower(), ktorá prevedie všetky znaky na malé písmená."
+    },
+    {
+      "Otazka": "Čo sa stane s textom, keď použijem funkciu lower()? \n\n ◉ Odpovedzte na otázku a potom vymyslite jedno slovo, ktoré najlepšie vystihuje túto tému.",
+      "Odpoved": "Všetky veľké písmená v texte sa zmenia na malé."
+    },
+    {
+      "Otazka": "Existuje v SQL funkcia na konverziu textu na malé písmená? \n\n ◉ Odpoveď používajte iba ako základ, potom doplňte popis sami.",
+      "Odpoved": "Áno, funkcia lower() slúži práve na tento účel."
+    },
+    {
+      "Otazka": "Ako zabezpečiť jednotný formát textu v malých písmenách? \n\n ◉ Obnovte informačný rozdiel do tejto odpovede.",
+      "Úloha": "Použiť _________ _________ _________ _________ celý text na malé písmená.",
+      "Odpoved": "Použiť funkciu lower(), ktorá prevedie celý text na malé písmená."
+    },
+    {
+      "Otazka": "Čo znamená prevod reťazca na malé písmená v databázových dotazoch? \n\n ◉ Odpovedzte na otázku a vyznačte hlavné body, ako keby ste ich kreslili na schéme.",
+      "Odpoved": "Znamená to, že všetky znaky sa zmenia na ich malú verziu, čo pomáha pri porovnávaní textov."
+    },
+    {
+      "Otazka": "Ktorá SQL funkcia pomáha pri normalizácii textu na malé písmená? \n\n ◉ Doplňte chýbajúce slová do odpovede.",
+      "Úloha": "Funkcia _________ zabezpečuje prevod _________ znakov na _________ písmená.",
+      "Odpoved": "Funkcia lower() zabezpečuje prevod všetkých znakov na malé písmená."
+    },
+    {
+      "Otazka": "Ako môžem upraviť text, aby neobsahoval veľké písmená? \n\n ◉ Dopíšte túto odpoveď do konca.",
+      "Úloha": "Použijem funkciu lower(), ktorá _________ _________ _________ _________ _________",
+      "Odpoved": "Použijem funkciu lower(), ktorá zmení všetky písmená na malé."
+    },
+    {
+      "Otazka": "Prečo je užitočné mať text v malých písmenách v databáze? \n\n ◉ nkrem tejto odpovede zapíšte všetky informácie, ktoré si k tejto téme pamätáte.",
+      "Odpoved": "Uľahčuje to vyhľadávanie a porovnávanie textov bez ohľadu na veľkosť písmen."
+    },
+    {
+      "Otazka": "Aký je výsledok aplikácie funkcie lower() na reťazec 'HELLO World'? \n\n ◉ Prečítajte si odporúčanú literatúru ešte raz a osviežte si svoje vedomosti.",
+      "Odpoved": "Výsledkom bude 'hello world', teda všetky znaky budú malé písmená."
+    }
+  ],
+  "sources": [
+    "uploads/data/06-SQL-SELECT.pdf:5:0",
+    "uploads/data/06-SQL-SELECT.pdf:6:0",
+    "uploads/data/06-SQL-SELECT.pdf:9:0"
+  ]
+}

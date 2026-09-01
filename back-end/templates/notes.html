@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8" />
+  <style>
+    @page { size: A4; margin: 22mm 16mm; }
+
+    body{
+      font-family: -apple-system, Segoe UI, Arial, sans-serif;
+      font-size: 12.5pt;
+      line-height: 1.55;
+      margin: 0;
+      text-rendering: geometricPrecision;
+    }
+
+    main{ max-width: 780px; margin: 0 auto; }
+
+    h1{ font-size: 20pt; margin: 0 0 6mm; }
+
+    .meta{
+      color:#555;
+      font-size:10.5pt;
+      margin-bottom: 8mm;
+    }
+
+    a{ color:inherit; text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    /* ===== CONTENTS ===== */
+    .toc-wrap{
+      margin: 0 0 10mm;
+      padding: 8mm 8mm 6mm;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      background: #fafafa;
+      break-after: page;
+      page-break-after: always;
+    }
+
+    .toc-title{
+      font-size: 14.5pt;
+      margin: 0 0 4mm;
+      padding-bottom: 2mm;
+      border-bottom: 1px solid #eaeaea;
+    }
+
+    .toc{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .toc li{
+      margin: 0;
+      padding: 0;
+    }
+
+    .toc a{
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      padding: 2.2mm 0;
+    }
+
+    .toc-num{
+      width: 22px;
+      flex: 0 0 22px;
+      color:#666;
+    }
+
+    .toc-text{
+      flex: 0 1 auto;
+    }
+
+    /* ===== SECTIONS ===== */
+    section{
+      margin-bottom: 6mm;
+      padding-bottom: 4mm;
+      border-bottom: 1px dashed #eee;
+    }
+    section:last-of-type{ border-bottom:none; padding-bottom:0; }
+
+    h2{
+      font-size: 14.5pt;
+      margin: 7mm 0 2mm;
+      padding-bottom: 2mm;
+      border-bottom: 1px solid #eee;
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+
+    .note{
+      margin: 3mm 0;
+      hyphens: auto;
+      text-align: justify;
+    }
+
+    ul{
+      margin: 2mm 0 4mm 0;
+      padding-left: 7mm;
+    }
+
+    li{
+      margin: 2mm 0;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .callout{
+      border-left: 3px solid #999;
+      padding: 6px 10px;
+      margin: 6px 0;
+      background: #f6f6f6;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .recommendations{
+      border-left: 3px solid #2f7d32;
+      padding: 6px 10px;
+      margin: 6px 0;
+      background: #f4fbf4;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .term{
+      margin: 2mm 0;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .term b{
+      display: inline-block;
+      min-width: 140px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>{{ doc.title }}</h1>
+
+    {% if doc.meta.sources %}
+    Zdroje:
+    {{ doc.meta.sources | join("; ") }}
+    {% endif %}
+
+    <div class="toc-wrap">
+      <div class="toc-title">Obsah</div>
+      <ul class="toc">
+        {% for s in doc.sections %}
+          <li>
+            <a href="#sec-{{ loop.index }}">
+              <span class="toc-num">{{ loop.index }}.</span>
+              <span class="toc-text">{{ s.heading }}</span>
+            </a>
+          </li>
+        {% endfor %}
+
+          <li>
+            <a href="#zaver">
+              <span class="toc-num">{{ doc.sections | length + 1 }}.</span>
+              <span class="toc-text">Záver</span>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+    {% for s in doc.sections %}
+      <section>
+        <h2 id="sec-{{ loop.index }}">{{ s.heading }}</h2>
+
+        {% if s.notes %}
+          {% for p in s.notes %}
+            <div class="note">{{ p }}</div>
+          {% endfor %}
+        {% endif %}
+
+        {% if s.bullets %}
+          <ul>
+            {% for b in s.bullets %}
+              <li>{{ b }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        {% if s.terms %}
+          {% for t in s.terms %}
+            <div class="term"><b>{{ t.term }}:</b> {{ t.definition }}</div>
+          {% endfor %}
+        {% endif %}
+
+        {% if s.callout %}
+          <div class="callout">{{ s.callout }}</div>
+        {% endif %}
+
+        {% if s.recommendations %}
+          <div class="recommendations">
+            <b>Odporúčania:</b> {{ s.recommendations }}
+          </div>
+        {% endif %}
+      </section>
+    {% endfor %}
+
+    <section>
+      <h2>Záver</h2>
+      <div class="note">{{ doc.conclusion }}</div>
+    </section>
+
+  </main>
+</body>
+</html>

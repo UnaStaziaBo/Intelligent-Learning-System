@@ -1,0 +1,59 @@
+{
+  "title": "Poznámky k transakciám v PostgreSQL",
+  "meta": {
+    "date": "2026-01-11",
+    "sources": [
+      "uploads/data/10-Transakcie.pdf:8:0",
+      "uploads/data/10-Transakcie.pdf:4:0",
+      "uploads/data/10-Transakcie.pdf:7:0"
+    ]
+  },
+  "sections": [
+    {
+      "heading": "Účel transakcií",
+      "notes": [
+        "Hlavným účelom transakcií je zabezpečiť konzistenciu dát pri vykonávaní skupiny databázových príkazov ako jednej jednotky.",
+        "V prípade chyby sa počas transakcie všetky zmeny vrátia späť (ROLLBACK), čo chráni integritu dát."
+      ],
+      "bullets": [],
+      "terms": [],
+      "callout": "Transakcie v PostgreSQL zabezpečujú, že všetky príkazy sa vykonajú spoločne, čím sa garantuje konzistencia a integrita dát.",
+      "recommendations": "Pre podrobnejšie informácie si preštuduj stranu 8 z dokumentu \"10-Transakcie.pdf\"."
+    },
+    {
+      "heading": "Príkazy na správu transakcií",
+      "notes": [
+        "Príkaz BEGIN slúži na spustenie transakcie a určuje začiatok skupiny operácií.",
+        "Príkaz COMMIT potvrdzuje vykonané zmeny a zabezpečuje ich trvalé uloženie do databázy.",
+        "ROLLBACK vráti všetky zmeny vykonané počas aktuálnej transakcie späť."
+      ],
+      "bullets": [],
+      "terms": [],
+      "callout": "BEGIN, COMMIT a ROLLBACK sú kľúčové príkazy na správu transakcií v PostgreSQL.",
+      "recommendations": "Pozri stranu 4 v dokumente \"10-Transakcie.pdf\" pre viac informácií o týchto príkazoch."
+    },
+    {
+      "heading": "Izolácia a autocommit",
+      "notes": [
+        "Izolácia zabezpečuje, že operácie v transakciách sa navzájom neovplyvňujú. To je kľúčové pre zabránenie nekonzistentných dát.",
+        "Autocommit režim znamená, že každý príkaz sa považuje za samostatnú transakciu, ktorá sa automaticky potvrdí po vykonaní."
+      ],
+      "bullets": [],
+      "terms": [],
+      "callout": "Izolácia operácií a režim autocommit sú dôležité aspekty správy transakcií v PostgreSQL.",
+      "recommendations": "Viac informácií nájdeš na strane 7 v dokumente \"10-Transakcie.pdf\"."
+    },
+    {
+      "heading": "SAVEPOINT a jeho význam",
+      "notes": [
+        "Príkaz SAVEPOINT umožňuje vytvorenie bodu v transakcii, kam je možné sa vrátiť, bez nutnosti zrušiť celú transakciu.",
+        "To je užitočné pre zložitější operácie, kde sa môže stať, že niektoré časti transakcie budú potrebovať opravu."
+      ],
+      "bullets": [],
+      "terms": [],
+      "callout": "SAVEPOINT zvyšuje flexibilitu správy zložitých transakcií v PostgreSQL.",
+      "recommendations": "Pre viac informácií sleduj stranu 8 z dokumentu \"10-Transakcie.pdf\"."
+    }
+  ],
+  "conclusion": "Transakcie v PostgreSQL hrajú kľúčovú úlohu pri správe dát, zabezpečujú ich konzistenciu a integritu. Hlavnými príkazmi sú BEGIN, COMMIT a ROLLBACK, ktoré umožňujú efektívne spravovať skupiny operácií. Izolácia operácií garantuje, že nebudú zasahovať do seba, čo je zásadné pre správnosť výsledkov. Autocommit režim a príkaz SAVEPOINT prinášajú flexibilitu do správy transakcií. Pre zložitšie operácie a detaily sú dokumenty ako \"10-Transakcie.pdf\" veľmi užitočné. Odporúčam si preštudovať stránky 4, 7 a 8 pre hlbšie porozumenie a rozšírenie vedomostí o správe transakcií v PostgreSQL."
+}

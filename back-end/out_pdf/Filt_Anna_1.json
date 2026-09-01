@@ -1,0 +1,89 @@
+{
+  "title": "Prevod textu na malé písmená v SQL",
+  "meta": {
+    "date": "2026-01-11",
+    "sources": [
+      "uploads/data/06-SQL-SELECT.pdf:5:0",
+      "uploads/data/06-SQL-SELECT.pdf:6:0",
+      "uploads/data/06-SQL-SELECT.pdf:9:0"
+    ]
+  },
+  "sections": [
+    {
+      "heading": "Úvod do funkcie lower()",
+      "notes": [
+        "Funkcia lower() sa v SQL používa na prevod veľkých písmen na malé.",
+        "Pomáha udržiavať jednotnosť formátu textu v databázach."
+      ],
+      "bullets": [
+        "Vždy zmení veľké písmená na malé.",
+        "Zjednodušuje porovnávanie textov."
+      ],
+      "terms": [
+        {
+          "term": "lower()",
+          "definition": "SQL funkcia na prevod reťazca na malé písmená."
+        }
+      ],
+      "callout": "Funkcia lower() je základným nástrojom na normalizáciu textu v SQL, čím zabezpečuje, že všetky znaky sú v malých písmenách.",
+      "recommendations": "Odporúčam prečítať si sekcie o funkciách v SQL v dokumente 'uploads/data/06-SQL-SELECT.pdf', najmä strany 5 a 6."
+    },
+    {
+      "heading": "Zabezpečenie jednotného formátu textu",
+      "notes": [
+        "Použitím funkcie lower() je možné dosiahnuť jednotný formát textu bez ohľadu na pôvodné písmená.",
+        "To je dôležité najmä v prípadoch, keď sa text porovnáva medzi rôznymi záznamami."
+      ],
+      "bullets": [
+        "Zjednodušuje vyhľadávanie a porovnávanie.",
+        "Pomáha pri predchádzaní chýb pri dotazoch."
+      ],
+      "terms": [],
+      "callout": "Jednotný formát textu uľahčuje manipuláciu a správu dát v databázach.",
+      "recommendations": "Pre lepšie pochopenie textových funkcií sa môžete pozrieť na stranu 9 dokumentu 'uploads/data/06-SQL-SELECT.pdf'."
+    },
+    {
+      "heading": "Praktické aplikácie funkcie lower()",
+      "notes": [
+        "V praxi sa funkcia lower() často využíva pri dotazoch, kde je potrebné porovnávať reťazce bez ohľadu na veľkosť písmen.",
+        "Príklad: SELECT * FROM users WHERE LOWER(username) = 'john_doe';"
+      ],
+      "bullets": [
+        "Dôležité pre presné vyhľadávanie.",
+        "Znižuje riziko nesprávneho porovnávania."
+      ],
+      "terms": [],
+      "callout": "Použitie funkcie lower() v SQL dotazoch je esenciálne pre zaručenie presnosti v porovnávaní textových polí.",
+      "recommendations": "Osvojte si použitie funkcie lower() v praktických úlohách prostredníctvom cvičení na stranách 5-9 dokumentu 'uploads/data/06-SQL-SELECT.pdf'."
+    },
+    {
+      "heading": "Príklady použitia",
+      "notes": [
+        "Funkcia lower() efektívne prevádza text: 'HELLO World' sa zmení na 'hello world'.",
+        "Je to jednoduchý, ale mocný nástroj pre databázových vývojárov."
+      ],
+      "bullets": [
+        "Aplikácia funkcie na rôznych reťazcoch je jednoduchá.",
+        "Umožňuje intuitívne porovnávanie."
+      ],
+      "terms": [],
+      "callout": "Praktické príklady pomáhajú lepšie pochopiť fungovanie funkcie lower() a jej aplikácie v reálnych scenároch.",
+      "recommendations": "Pre podrobnejšie príklady si pozrite sekcie na stranách 5 a 6 dokumentu 'uploads/data/06-SQL-SELECT.pdf'."
+    },
+    {
+      "heading": "Význam malých písmen v databáze",
+      "notes": [
+        "Použitie malých písmen uľahčuje vyhľadávanie a porovnávanie textov bez ohľadu na vstup.",
+        "Zjednodušuje organizačné a administratívne úlohy v databázach."
+      ],
+      "bullets": [
+        "Zníženie možných konfliktov pri porovnávaní.",
+        "Uklidňuje užívateľa a zefektívňuje proces vyhľadávania."
+      ],
+      "terms": [],
+      "callout": "Mať text v malých písmenách v databáze je užitočné pre zvýšenie efektivity a presnosti vyhľadávaní.",
+      "recommendations": "Odporúčam preštudovať dôvody pre normalizáciu textu v databázach na stranách 6 a 9 dokumentu 'uploads/data/06-SQL-SELECT.pdf'."
+    }
+  ],
+  "conclusion": "Funkcia lower() je kľúčovým nástrojom na prevod textu na malé písmená v SQL. Zabezpečuje konzistentnosť a presnosť v porovnávaní textových polí. Dôležité je si zapamätať, že táto funkcia nielenže zjednodušuje manipuláciu s textom, ale aj zvyšuje účinnosť vyhľadávania v databázach. Doporučuje sa používať ju v prípadoch, kde je potrebné porovnávať reťazce s rôznymi veľkosťami písmen. Pri ďalšom štúdiu pamätajte na dokument 'uploads/data/06-SQL-SELECT.pdf', kde nájdete podrobné informácie a praktické príklady od strany 5 po 9."
+}

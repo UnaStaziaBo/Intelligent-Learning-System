@@ -1,0 +1,75 @@
+{
+  "title": "Poznámky k databázovým transakciám",
+  "meta": {
+    "date": "2026-01-11",
+    "sources": [
+      "uploads/data/02-ERD.pdf:4:0",
+      "uploads/data/02-ERD.pdf:15:0",
+      "uploads/data/02-ERD.pdf:12:0"
+    ]
+  },
+  "sections": [
+    {
+      "heading": "Definícia a význam vlastnosti transakcií",
+      "notes": [
+        "Vlastnosť zabezpečuje, že každá transakcia v databáze sa vykoná celá, alebo vôbec, čím sa zabraňuje nekonzistentným údajom.",
+        "Základná charakteristika je nepretržitosť vykonávania, ktorá chráni pred čiastočnými zmenami a zaručuje integritu dát."
+      ],
+      "bullets": [
+        "Transakcie musia prebehnúť ako celok, bez prerušenia.",
+        "Zabránia sa tak chybám alebo nekonzistentnosti."
+      ],
+      "terms": [
+        {
+          "term": "Atomicita",
+          "definition": "Vlastnosť zabezpečujúca, že transakcia je celá úspešná alebo sa neuskutoční vôbec."
+        }
+      ],
+      "callout": "Zabezpečenie nepretržitosti a úplnosti transakcií je kľúčové pre integritu databázových údajov.",
+      "recommendations": "Pre hlbšie pochopenie koncepcie transakcií navrhujeme preštudovať zdroj: 'uploads/data/02-ERD.pdf:4:0'."
+    },
+    {
+      "heading": "Integrita dát a jej význam",
+      "notes": [
+        "Integrita dát sa udržuje zabezpečením, že databázové operácie prebiehajú ako jeden celok.",
+        "Časť operácie, ktorá by bola úspešná, a iná nie, by mohla viesť k chybným alebo nekonzistentným údajom."
+      ],
+      "bullets": [
+        "Prerušovanie operácií môže viesť k problémom.",
+        "Úplnosť zaručuje, že dáta nebudú poškodené alebo neúplné."
+      ],
+      "terms": [],
+      "callout": "Zabezpečenie integrity dát si vyžaduje dôsledné dodržiavanie vlastnosti zabezpečujúcej úplnosť a nedeliteľnosť operácií.",
+      "recommendations": "Odporúčame nastudovať materiál na stránke: 'uploads/data/02-ERD.pdf:15:0'."
+    },
+    {
+      "heading": "Dôsledky čiastočného vykonania transakcií",
+      "notes": [
+        "Ak sa databázové zmeny vykonávajú len čiastočne, dochádza k nekonzistentnosti údajov.",
+        "Časť aktualizovaných údajov a neaktualizovaných môže viesť k nesprávnym výsledkom."
+      ],
+      "bullets": [
+        "Nekonzistentné dáta môžu spôsobiť vážne chyby v systéme.",
+        "Celistvosť údajov je zásadná pre funkčnosť systému."
+      ],
+      "terms": [],
+      "callout": "Zabránime nekonzistentnosti údajov dodržaním praxe v oblasti jedného celku operácie ako prostriedka na ochranu systému.",
+      "recommendations": "Odbornú literatúru na túto tému nájdete na stránke: 'uploads/data/02-ERD.pdf:12:0'."
+    },
+    {
+      "heading": "Princíp nedeliteľnosti transakcií",
+      "notes": [
+        "Nedeliteľnosť transakcií zabezpečuje, že celý proces sa považuje za jednotku práce.",
+        "Umožňuje to vyhnúť sa čiastočným výsledkom a nespokojivým stavom databázy."
+      ],
+      "bullets": [
+        "Transakcia sa buď vykoná celá, alebo sa vráti do pôvodného stavu.",
+        "Princíp je kľúčovým aspektom databázových operácií."
+      ],
+      "terms": [],
+      "callout": "Nedeliteľnosť je zásadná pre ochranu integrity databáz a zjednodušenie správy transakcií.",
+      "recommendations": "Pre lepšie pochopenie tejto problematiky odporúčame preskúmať zdroj: 'uploads/data/02-ERD.pdf:4:0'."
+    }
+  ],
+  "conclusion": "Transakcie v databázach sú kľúčom k zabezpečeniu integrity a konzistencie údajov. Vlastnosť nedeliteľnosti, známa ako atomicita, je nevyhnutná na zachovanie ochrany pred čiastočnými zmenami. Bez správne dodržovanej praxe môže nastať nekonzistentnosť, ktorá spôsobuje vážne problémy a chyby v systéme. Zabezpečenie, že každý proces prebehne buď úplne alebo vôbec, chráni dáta pred poškodením. Dôležité je tiež vzdelávať sa v oblasti komplexných databázových transakcií a ich správy, čo môže výrazne uľahčiť prax. Odporúčame preštudovať si konkrétne sekcie z uvedených zdrojov: 'uploads/data/02-ERD.pdf:4:0', 'uploads/data/02-ERD.pdf:15:0', a 'uploads/data/02-ERD.pdf:12:0'."
+}

@@ -1,0 +1,134 @@
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 2rem;
+    background-color: var(--color--topbar);
+    color: var(--color--primary-white);
+}
+
+.top-bar-left,
+.top-bar-center,
+.top-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: nowrap;    
+    white-space: nowrap;  
+}
+
+.logo {
+    color: var(--color--accent);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.top-link {
+    font-size: 0.95rem;
+    text-decoration: none;
+    color: var(--color--primary-white);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 0;
+}
+
+.top-link:hover {
+    text-decoration: underline;
+}
+
+.icon-button {
+    border: none;
+    background: transparent;
+    color: var(--color--primary-white);
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.top-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+
+    padding: 0.25rem;
+    border-radius: 999px;
+
+    background-color: var(--color--primary-white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    flex: 0 0 auto;
+}
+
+.lang-btn {
+    border: none;
+    background: transparent;
+
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.02em;
+
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+
+    cursor: pointer;
+    color: var(--color--accent);
+
+    transition: background-color 120ms ease, transform 120ms ease;
+}
+
+.lang-btn:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+    transform: translateY(-1px);
+}
+
+.lang-btn.active {
+    background-color: var(--color--accent);
+    color: var(--color--primary-white);
+}
+
+body.dark .lang-switch {
+    background-color: rgba(18, 22, 20, 0.92);
+    border: 1px solid rgba(155, 181, 152, 0.28);
+}
+
+body.dark .lang-btn {
+    color: rgba(237, 239, 234, 0.9);
+}
+
+body.dark .lang-btn:hover {
+    background-color: rgba(155, 181, 152, 0.16);
+}
+
+body.dark .lang-btn.active {
+    background-color: rgba(155, 181, 152, 0.85);
+    color: #0F1210;
+}
+
+@media (max-width: 680px) {
+  .top-bar {
+    flex-direction: row; 
+    align-items: center;
+    padding: 0.65rem 1rem;
+  }
+
+  .top-bar-left {
+    flex: 1 1 auto;
+  }
+
+  .top-bar-right {
+    flex: 0 0 auto;
+    gap: 0.5rem;
+  }
+
+  .lang-btn {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.55rem;
+  }
+}

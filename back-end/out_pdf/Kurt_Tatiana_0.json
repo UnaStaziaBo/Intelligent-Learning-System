@@ -1,0 +1,127 @@
+{
+  "title": "Poznámky k Entitno-relačnému Modelu",
+  "meta": {
+    "date": "2026-01-11",
+    "sources": [
+      "uploads/data/02-ERD.pdf:22:0",
+      "uploads/data/03-RM.pdf:26:0",
+      "uploads/data/02-ERD.pdf:3:0"
+    ]
+  },
+  "sections": [
+    {
+      "heading": "Úvod do Entitno-relačného Modelu",
+      "notes": [
+        "Entitno-relačný model (ERM) je základným nástrojom na organizovanie a spracovanie údajov v databázach.",
+        "Umožňuje definovať objekty (entity) a ich vzťahy, čo zefektívňuje štruktúrovanie údajov."
+      ],
+      "bullets": [
+        "Definícia entít a ich vzťahov je kľúčová pre databázový dizajn.",
+        "Účelom ERM je efektívne modelovanie reálneho sveta."
+      ],
+      "terms": [
+        {
+          "term": "Entita",
+          "definition": "Objekt alebo koncept reprezentovaný v databáze."
+        },
+        {
+          "term": "Vzťah",
+          "definition": "Aspekt, ktorý spája dve alebo viac entít."
+        }
+      ],
+      "callout": "Entitno-relačný model (ERM) zjednodušuje organizáciu údajov, pomáha definovať jasné vzťahy a umožňuje efektívne návrhy databáz.",
+      "recommendations": "Odporúča sa prečítať si podrobnosti v sprievodcovi po ERD na stránke 22 vo zdroji uploads/data/02-ERD.pdf."
+    },
+    {
+      "heading": "Grafické znázornenie a Dátové Modely",
+      "notes": [
+        "Grafické znázornenie entít a vzťahov zjednodušuje komplexné modelovanie.",
+        "Vizualizácia je dôležitá pre efektívnu komunikáciu medzi vývojármi a koncovými používateľmi."
+      ],
+      "bullets": [
+        "Rôzne notácie môžu poskytnúť alternatívne pohľady na dáta.",
+        "Grafy a diagramy sú kľúčové pri prezentácii údajov."
+      ],
+      "terms": [
+        {
+          "term": "Notácia",
+          "definition": "Spôsob, akým sú modely vizualizované a reprezentované."
+        }
+      ],
+      "callout": "Grafické znázornenie pomáha jasne komunikovať komplexné vzťahy v databázových modeloch.",
+      "recommendations": "Odporúča sa preštudovať sekciu grafických notácií na strane 26 v dokumente uploads/data/03-RM.pdf."
+    },
+    {
+      "heading": "Základné Prvky Konceptuálneho Modelu",
+      "notes": [
+        "Konceptuálny model údajov je základ preprocessingu pre všetky databázy.",
+        "Zahŕňa entity, atribúty a ich vzťahy."
+      ],
+      "bullets": [
+        "Entity sú základné jednotky, zatiaľ čo atribúty poskytujú informácie o entitách.",
+        "Vzťahy definujú interakcie medzi entitami."
+      ],
+      "terms": [
+        {
+          "term": "Atribút",
+          "definition": "Charakteristika alebo vlastnosť entity."
+        }
+      ],
+      "callout": "Základné prvky konceptuálneho modelu (entita, atribút, vzťah) sú kľúčové pre potenciálny dizajn databázy.",
+      "recommendations": "Podrobnosti o konceptuálnych modeloch nájdete na strane 3 vo zdroji uploads/data/02-ERD.pdf."
+    },
+    {
+      "heading": "Transformácia do Relačného Modelu",
+      "notes": [
+        "Transformácia ERM do relačného modelu je zásadná pre praktickú implementáciu.",
+        "Tento proces organizuje dáta do tabuliek, čo umožňuje ich efektívne ukladanie a spracovanie."
+      ],
+      "bullets": [
+        "Relačný model je najpoužívanejší typ databáz v praxi.",
+        "Transformácia umožňuje prevod schémy do produktu vhodného na implementáciu."
+      ],
+      "terms": [
+        {
+          "term": "Relačný model",
+          "definition": "Model údajov, ktorý ukladá dáta v tabuľkách."
+        }
+      ],
+      "callout": "Transformácia z ERM do relačného modelu je kľúčová pre efektívne riadenie databázových systémov.",
+      "recommendations": "Detailné informácie o relačnom modelovaní nájdete na strane 26 vo zdroji uploads/data/03-RM.pdf."
+    },
+    {
+      "heading": "Integrita Dát a Separácia Údajov od Procesov",
+      "notes": [
+        "Entitno-relačný model prispieva k integrite dát cez definíciu vzťahov medzi entitami.",
+        "Separácia údajov od aktivít zvyšuje flexibilitu a správu v databázach."
+      ],
+      "bullets": [
+        "Správa údajov je jednoduchšia, keď sú oddelené od procesov.",
+        "Flexibilita umožňuje prispôsobenie procesov bez nutnosti zmien v údajoch."
+      ],
+      "terms": [
+        {
+          "term": "Integrita dát",
+          "definition": "Konzistencia a správnosť údajov v databáze."
+        }
+      ],
+      "callout": "Separácia údajov od procesov a podpora integrity dát sú dôležité prínosy ERM pre databázové systémy.",
+      "recommendations": "Pre viacej informácií o integrite dát si prečítajte stránky 22 a 26 v dokumentoch uploads/data/02-ERD.pdf a uploads/data/03-RM.pdf."
+    },
+    {
+      "heading": "Reprezentácia Reálneho Sveta v Databázach",
+      "notes": [
+        "Presná reprezentácia reálneho sveta zabezpečuje relevantnosť databázy pre konkrétne aplikácie.",
+        "Správne modelovanie podporuje efektívnosť správy a prístupu k údajom."
+      ],
+      "bullets": [
+        "Modelovanie reálneho sveta pomáha pri strategickom rozhodovaní.",
+        "Dáta musia byť aktuálne a presné pre použitie v reálnych aplikáciách."
+      ],
+      "terms": [],
+      "callout": "Reprezentácia reálneho sveta v databázach je nevyhnutná pre ich praktickú použiteľnosť a relevantnosť.",
+      "recommendations": "Odporúča sa naštudovať sekciu o reprezentácii entít v ERD na strane 3 dokumentu uploads/data/02-ERD.pdf."
+    }
+  ],
+  "conclusion": "Entitno-relačný model (ERM) predstavuje základný nástroj v oblastiach databázového inžinierstva a softvérového vývoja. Umožňuje efektívne organizovanie a spracovanie údajov prostredníctvom jasnej definície entít a ich vzťahov. Výhody ako integrita dát, flexibilita a jednoduchá vizualizácia modelov sú kľúčové pre úspech databázových aplikácií. Tieto aspekty robia model intuitívnym a prístupným predovšetkým pre začiatočníkov. Pre ďalšie štúdium témy sú odporúčané sprievodcovia a materiály uvedené v zhromaždených zdrojoch: začnite s uploads/data/02-ERD.pdf na strane 22 a pokračujte s uploads/data/03-RM.pdf na strane 26 pre hlbšie porozumenie relačného modelu."
+}

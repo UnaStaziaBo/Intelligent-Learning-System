@@ -1,0 +1,82 @@
+{
+  "title": "Funkcie pre prácu s textom a dátumami v SQL",
+  "meta": {
+    "date": "2026-01-11",
+    "sources": [
+      "uploads/data/06-SQL-SELECT.pdf:5:0",
+      "uploads/data/06-SQL-SELECT.pdf:8:0",
+      "uploads/data/06-SQL-SELECT.pdf:6:0"
+    ]
+  },
+  "sections": [
+    {
+      "heading": "Funkcia Length",
+      "notes": [
+        "Funkcia length je určená na zistenie počtu znakov v textovom reťazci.",
+        "Použitím tejto funkcie môžeme získať dĺžku slova alebo akéhokoľvek iného textového údaj.",
+        "Môže byť použitá aj v databázach na zistenie veľkosti údajov."
+      ],
+      "bullets": [
+        "Vráti počet znakov v zadanom texte.",
+        "Pracuje s textovými reťazcami."
+      ],
+      "terms": [
+        {
+          "term": "length",
+          "definition": "Funkcia na vrátenie počtu znakov v textovom reťazci."
+        }
+      ],
+      "callout": "Použitie funkcie length je efektívny spôsob, ako získať dĺžku textu, či už je v otázke databázy alebo iných textových údajov.",
+      "recommendations": "Pre viac informácií o funkcii length pozrite stranu 5 dokumentu \"SQL SELECT\"."
+    },
+    {
+      "heading": "Funkcia ASCII",
+      "notes": [
+        "Funkcia ascii vracia ASCII kód prvého znaku reťazca.",
+        "Nie je určená pre spracovanie dátumov alebo časov a pracuje len s textovými údajmi.",
+        "Príklad: ASCII kód znaku 'A' je 65."
+      ],
+      "bullets": [
+        "Nepodporuje operácie s dátumovými údajmi.",
+        "Základná textová funkcia pre získanie ASCII kódu znaku."
+      ],
+      "terms": [
+        {
+          "term": "ascii",
+          "definition": "Funkcia na získanie ASCII kódu prvého znaku textového reťazca."
+        }
+      ],
+      "callout": "ASCII funkcia je užitočná pri práci s textovými údajmi, avšak nie je aplikovateľná na dátumové operácie.",
+      "recommendations": "Viac informácií o funkcii ascii nájdete na strane 8 dokumentu \"SQL SELECT\"."
+    },
+    {
+      "heading": "Praktické aplikácie funkcií",
+      "notes": [
+        "Funkciu length je možné použiť vo SQL na určovanie veľkosti textového reťazca.",
+        "Funkcia ascii je vhodná na analýzu textových dát, avšak nie na spracovanie časov alebo dátumov."
+      ],
+      "bullets": [
+        "Vyhľadanie počtu písmen v reťazci pomocou SQL je jednoduché s použitím funkcie length.",
+        "Môžete napríklad spočítať dĺžku slova 'databáza', čo je 8."
+      ],
+      "terms": [],
+      "callout": "Obe funkcie majú svoje špecifické využitie a sú základnými nástrojmi pre prácu s textom v SQL.",
+      "recommendations": "Pre praktické aplikácie si prečítajte kapitolu o manipulácii s textom na strane 6 dokumentu \"SQL SELECT\"."
+    },
+    {
+      "heading": "Zhrnutie a porovnanie funkcií",
+      "notes": [
+        "Funkcia length a ascii majú rozdielne účely, avšak obe sú kľúčové pri manipulácii s textovými údajmi.",
+        "Kým length sa zameriava na počet znakov, ascii sa zameriava na kódovanie znakov."
+      ],
+      "bullets": [
+        "Dôležité je rozlišovať, akú funkciu v konkrétnej situácii použiť.",
+        "Funkcia length je pre počet znakov a ascii pre zistenie kódu znaku."
+      ],
+      "terms": [],
+      "callout": "Pochopenie rozdielu medzi týmito dvoma funkciami je zásadné pre efektívne spracovanie textu v SQL.",
+      "recommendations": "Porovnajte funkcie s výkladom na strane 5 a 6 dokumentu \"SQL SELECT\"."
+    }
+  ],
+  "conclusion": "V tejto práci sme sa podrobne zaoberali dvoma základnými textovými funkciami v SQL: length a ascii. Funkcia length sa využíva najmä na zistenie počtu znakov v textovom reťazci, zatiaľ čo ascii sa používa na získanie ASCII kódu prvého znaku reťazca. Tieto funkcie sú základnými nástrojmi pre prácu s textovými údajmi a rozlišovanie ich účelu môže výrazne zefektívniť manipuláciu s dátami. Pre ďalšie štúdium týchto funkcií odporúčame preštudovať dokument \"SQL SELECT\", ktorý poskytuje podrobnosti o ich aplikáciách a praktickom využití na stranách 5, 6 a 8. Učenie sa o týchto funkciách je kľúčové pre každého, kto sa zaoberá databázami a spracovaním textu."
+}

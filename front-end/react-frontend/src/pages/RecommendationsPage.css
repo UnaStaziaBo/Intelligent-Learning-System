@@ -1,0 +1,449 @@
+.reco-wrapper {
+    width: 100%;
+    min-height: calc(100vh - 215px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 1.5rem 2.5rem;
+    box-sizing: border-box;
+}
+
+.reco-card {
+    width: 100%;
+    max-width: 920px;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    padding: 1.9rem 2.2rem 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.reco-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+
+.reco-title {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 650;
+}
+
+.reco-content-grid {
+    display: grid;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.reco-info-card {
+    border-radius: var(--radius-md);
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.84);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+.reco-inner-header {
+    margin-bottom: 10px;
+}
+
+.reco-inner-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.reco-top-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.reco-buttons-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.reco-buttons-row--main {
+    align-items: center;
+}
+
+.reco-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    border-radius: 999px;
+    padding: 0.72rem 1.25rem;
+    font-size: 0.94rem;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: inherit;
+    white-space: nowrap;
+    transition:
+        background-color 0.18s ease,
+        border-color 0.18s ease,
+        color 0.18s ease,
+        box-shadow 0.18s ease,
+        transform 0.12s ease,
+        opacity 0.18s ease;
+}
+
+.reco-button:hover {
+    transform: translateY(-1px);
+}
+
+.reco-button:active {
+    transform: translateY(0);
+}
+
+.reco-button:disabled {
+    opacity: 0.55;
+    cursor: default;
+    transform: none;
+    box-shadow: none;
+}
+
+.reco-button--primary {
+    background: rgba(231, 241, 221, 0.72);
+    color: var(--color--accent);
+    border: 1px solid rgba(150, 163, 141, 0.26);
+    box-shadow: 0 4px 12px rgba(146, 169, 129, 0.08);
+}
+
+.reco-button--primary:hover {
+    background: rgba(231, 241, 221, 0.92);
+    border-color: rgba(146, 169, 129, 0.34);
+    box-shadow: 0 8px 18px rgba(146, 169, 129, 0.12);
+}
+
+.reco-button--main {
+    min-width: 180px;
+    font-weight: 600;
+}
+
+.reco-button--secondary {
+    background: rgba(255, 255, 255, 0.86);
+    color: var(--color--accent);
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.reco-button--secondary:hover {
+    background: rgba(231, 241, 221, 0.42);
+    border-color: rgba(146, 169, 129, 0.24);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+}
+
+.reco-button--ghost {
+    background: transparent;
+    color: rgba(0, 0, 0, 0.68);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.reco-button--ghost:hover {
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.12);
+    color: rgba(0, 0, 0, 0.84);
+}
+
+.reco-conclusion {
+    margin-top: 12px;
+    border-radius: var(--radius-md);
+    padding: 12px 14px;
+    background: rgba(231, 241, 221, 0.26);
+    border: 1px solid rgba(150, 163, 141, 0.16);
+}
+
+.reco-conclusion-title {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.7;
+    margin-bottom: 6px;
+}
+
+.reco-conclusion-text {
+    font-size: 0.95rem;
+    line-height: 1.45;
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+.reco-download-error {
+    border-radius: var(--radius-md);
+    padding: 0.75rem 0.9rem;
+    background: rgba(220, 80, 80, 0.08);
+    border: 1px solid rgba(220, 80, 80, 0.16);
+    color: rgba(120, 20, 20, 0.88);
+    font-size: 0.92rem;
+}
+
+.reco-success {
+    margin-top: 12px;
+    border-radius: var(--radius-md);
+    padding: 0.75rem 0.9rem;
+    background: rgba(231, 241, 221, 0.28);
+    border: 1px solid rgba(150, 163, 141, 0.16);
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 0.92rem;
+}
+
+.reco-rating-card {
+    margin-top: 14px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    padding-top: 14px;
+}
+
+.reco-rating-title {
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-weight: 650;
+    font-size: 1.05rem;
+}
+
+.reco-stars-row {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.reco-star {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.65rem;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.22);
+    transition: transform 0.12s ease, color 0.12s ease;
+}
+
+.reco-star:hover {
+    transform: translateY(-1px);
+    color: rgba(0, 0, 0, 0.35);
+}
+
+.reco-star-active {
+    color: rgba(150, 163, 141, 0.95);
+}
+
+.reco-textarea {
+    width: 100%;
+    min-height: 92px;
+    border-radius: var(--radius-md);
+    padding: 10px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    outline: none;
+    font-size: 0.95rem;
+    font-family: inherit;
+    background: rgba(255, 255, 255, 0.92);
+    transition: box-shadow 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+    resize: vertical;
+}
+
+.reco-textarea:focus {
+    border-color: rgba(0, 0, 0, 0.22);
+    box-shadow: 0 0 0 3px rgba(174, 197, 157, 0.30);
+    background: rgba(255, 255, 255, 0.98);
+}
+
+.reco-rating-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.students-processing-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: grid;
+    place-items: center;
+    z-index: 50;
+    padding: 16px;
+}
+
+.students-processing-card {
+    width: 100%;
+    max-width: 520px;
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
+    padding: 18px 18px 16px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.students-processing-gif {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    display: block;
+    margin: 2px auto 10px;
+}
+
+.students-processing-title {
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+}
+
+.students-processing-subtitle {
+    font-size: 0.95rem;
+    color: var(--color--muted);
+    line-height: 1.35;
+}
+
+body.dark .reco-card {
+    background: rgba(19, 21, 20, 0.92);
+    border: 1px solid rgba(155, 181, 152, 0.22);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45);
+}
+
+body.dark .reco-info-card {
+    background: rgba(18, 22, 20, 0.88);
+    border: 1px solid rgba(155, 181, 152, 0.18);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.34);
+}
+
+body.dark .reco-title,
+body.dark .reco-rating-title {
+    color: rgba(237, 239, 234, 0.95);
+}
+
+body.dark .reco-conclusion {
+    background: rgba(155, 181, 152, 0.10);
+    border: 1px solid rgba(155, 181, 152, 0.22);
+}
+
+body.dark .reco-conclusion-text {
+    color: rgba(237, 239, 234, 0.85);
+}
+
+body.dark .reco-download-error {
+    background: rgba(220, 80, 80, 0.10);
+    border-color: rgba(220, 80, 80, 0.18);
+    color: rgba(255, 210, 210, 0.85);
+}
+
+body.dark .reco-success {
+    background: rgba(155, 181, 152, 0.12);
+    border: 1px solid rgba(155, 181, 152, 0.22);
+    color: rgba(237, 239, 234, 0.80);
+}
+
+body.dark .reco-button--primary {
+    background: rgba(155, 181, 152, 0.12);
+    color: rgba(237, 239, 234, 0.95);
+    border: 1px solid rgba(155, 181, 152, 0.24);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+}
+
+body.dark .reco-button--primary:hover {
+    background: rgba(155, 181, 152, 0.18);
+    border-color: rgba(155, 181, 152, 0.34);
+}
+
+body.dark .reco-button--secondary {
+    background: rgba(237, 239, 234, 0.07);
+    color: rgba(237, 239, 234, 0.90);
+    border: 1px solid rgba(237, 239, 234, 0.14);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.22);
+}
+
+body.dark .reco-button--secondary:hover {
+    background: rgba(155, 181, 152, 0.12);
+    border-color: rgba(155, 181, 152, 0.22);
+}
+
+body.dark .reco-button--ghost {
+    background: transparent;
+    color: rgba(237, 239, 234, 0.72);
+    border: 1px solid rgba(237, 239, 234, 0.10);
+}
+
+body.dark .reco-button--ghost:hover {
+    background: rgba(237, 239, 234, 0.05);
+    color: rgba(237, 239, 234, 0.92);
+    border-color: rgba(237, 239, 234, 0.18);
+}
+
+body.dark .reco-textarea {
+    background-color: rgba(18, 22, 20, 0.92);
+    color: rgba(237, 239, 234, 0.92);
+    border: 1px solid rgba(155, 181, 152, 0.30);
+}
+
+body.dark .reco-textarea::placeholder {
+    color: rgba(237, 239, 234, 0.45);
+}
+
+body.dark .reco-textarea:focus {
+    box-shadow: 0 0 0 3px rgba(155, 181, 152, 0.22);
+    border-color: rgba(155, 181, 152, 0.40);
+}
+
+body.dark .reco-star {
+    color: rgba(237, 239, 234, 0.30);
+}
+
+body.dark .reco-star-active {
+    color: rgba(155, 181, 152, 0.95);
+}
+
+body.dark .students-processing-overlay {
+    background: rgba(0, 0, 0, 0.45);
+}
+
+body.dark .students-processing-card {
+    background: rgba(19, 21, 20, 0.92);
+    border: 1px solid rgba(155, 181, 152, 0.22);
+    box-shadow: 0 16px 44px rgba(0, 0, 0, 0.55);
+}
+
+body.dark .students-processing-title {
+    color: rgba(237, 239, 234, 0.92);
+}
+
+body.dark .students-processing-subtitle {
+    color: rgba(237, 239, 234, 0.62);
+}
+
+@media (max-width: 900px) {
+    .reco-card {
+        padding: 1.6rem 1.3rem 1.7rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .reco-buttons-row,
+    .reco-top-actions,
+    .reco-rating-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .reco-button,
+    .reco-button--main,
+    .reco-button--primary,
+    .reco-button--secondary,
+    .reco-button--ghost {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .students-processing-gif {
+        width: 140px;
+        height: 140px;
+    }
+}

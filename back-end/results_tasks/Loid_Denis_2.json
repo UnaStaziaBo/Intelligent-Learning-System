@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "Otazka": "Na čo slúži funkcia length pri práci s textom? \n\n ◉ Odpovedzte čo najsprávnejšie, všetko vyjde!",
+      "Odpoved": "Funkcia length vracia počet znakov v zadanom texte."
+    },
+    {
+      "Otazka": "Je ascii funkcia určená na spracovanie dátumov alebo časov? \n\n ◉ Po svojej odpovedi prečítajte správnu odpoveď rýchlejšie, pomalšie, so záujmom, s iróniou, šeptom.",
+      "Odpoved": "Nie, ascii je funkcia na získanie ASCII kódu prvého znaku reťazca, nie je to funkcia pre dátum alebo čas."
+    },
+    {
+      "Otazka": "Ako môžem zistiť veľkosť textového reťazca v databáze? \n\n ◉ Odpovedzte na otázku a potom vymyslite jedno slovo, ktoré najlepšie vystihuje túto tému.",
+      "Odpoved": "Použitím funkcie length, ktorá spočíta počet znakov v reťazci."
+    },
+    {
+      "Otazka": "Môže ascii funkcia pracovať s časovými údajmi? \n\n ◉ Odpoveď používajte iba ako základ, potom doplňte popis sami.",
+      "Odpoved": "Nie, ascii pracuje len s textovými údajmi, nie s časovými."
+    },
+    {
+      "Otazka": "Čo získam, keď použijem length na slovo 'databáza'? \n\n ◉ Obnovte informačný rozdiel do tejto odpovede.",
+      "Úloha": "Získate _________ _________ _________ _________ 'databáza' má osem znakov.",
+      "Odpoved": "Získate číslo 8, pretože slovo 'databáza' má osem znakov."
+    },
+    {
+      "Otazka": "Je ascii funkcia súčasťou základných nástrojov na manipuláciu s dátumom? \n\n ◉ Odpovedzte na otázku a vyznačte hlavné body, ako keby ste ich kreslili na schéme.",
+      "Odpoved": "Nie, ascii je základná textová funkcia, nie funkcia na dátumové operácie."
+    },
+    {
+      "Otazka": "Ako sa dá zistiť počet písmen v reťazci pomocou SQL? \n\n ◉ Doplňte chýbajúce slová do odpovede.",
+      "Úloha": "Použije _________ funkcia length, _________ vráti počet _________ v reťazci.",
+      "Odpoved": "Použije sa funkcia length, ktorá vráti počet znakov v reťazci."
+    },
+    {
+      "Otazka": "Čo predstavuje hodnota vrátená funkciou ascii pri zadaní znaku 'A'? \n\n ◉ Dopíšte túto odpoveď do konca.",
+      "Úloha": "Vracia číslo 65, čo je _________ _________ _________ _________ _________",
+      "Odpoved": "Vracia číslo 65, čo je ASCII kód veľkého písmena A."
+    },
+    {
+      "Otazka": "Je ascii vhodná na výpočet rozdielu medzi dvoma dátumami? \n\n ◉ nkrem tejto odpovede zapíšte všetky informácie, ktoré si k tejto téme pamätáte.",
+      "Odpoved": "Nie, ascii sa používa na prácu s textom, nie na výpočty s dátumami."
+    },
+    {
+      "Otazka": "Aký typ údajov spracováva funkcia length? \n\n ◉ Prečítajte si odporúčanú literatúru ešte raz a osviežte si svoje vedomosti.",
+      "Odpoved": "Funkcia length spracováva textové reťazce a vracia ich dĺžku."
+    }
+  ],
+  "sources": [
+    "uploads/data/06-SQL-SELECT.pdf:5:0",
+    "uploads/data/06-SQL-SELECT.pdf:8:0",
+    "uploads/data/06-SQL-SELECT.pdf:6:0"
+  ]
+}

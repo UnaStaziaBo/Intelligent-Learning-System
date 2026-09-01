@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "Otazka": "Ako by sme mohli definovať vlastnosť, ktorá zabezpečuje, že operácie v databáze sú nepretržité a úplné? \n\n ◉ Odpovedzte čo najsprávnejšie, všetko vyjde!",
+      "Odpoved": "Táto vlastnosť znamená, že každá transakcia v databáze sa vykoná celá alebo vôbec, čím sa zabraňuje čiastočným zmenám, ktoré by mohli viesť k nekonzistentným údajom."
+    },
+    {
+      "Otazka": "Prečo je dôležité, aby sa databázové operácie vykonávali ako jeden celok bez prerušenia? \n\n ◉ Po svojej odpovedi prečítajte správnu odpoveď rýchlejšie, pomalšie, so záujmom, s iróniou, šeptom.",
+      "Odpoved": "Je to dôležité preto, aby sa zabezpečila integrita dát a zabránilo sa situáciám, kde by časť operácie bola úspešná a časť nie, čo by mohlo spôsobiť chyby alebo nekonzistentnosť."
+    },
+    {
+      "Otazka": "Čo znamená, keď hovoríme o nepretržitosti vykonávania databázových transakcií? \n\n ◉ Odpovedzte na otázku a potom vymyslite jedno slovo, ktoré najlepšie vystihuje túto tému.",
+      "Odpoved": "Znamená to, že transakcia sa vykoná ako jeden nedeliteľný celok, ktorý buď prebehne úplne, alebo sa vráti do pôvodného stavu bez akýchkoľvek zmien."
+    },
+    {
+      "Otazka": "Ako súvisí pojem úplnosti operácie s ochranou dát v databázach? \n\n ◉ Odpoveď používajte iba ako základ, potom doplňte popis sami.",
+      "Odpoved": "Úplnosť operácie zabezpečuje, že dáta nebudú poškodené alebo neúplné, pretože transakcia sa buď dokončí celá, alebo sa neuskutoční vôbec."
+    },
+    {
+      "Otazka": "Aký význam má vlastnosť, ktorá zabraňuje čiastočnému vykonaniu databázových zmien? \n\n ◉ Obnovte informačný rozdiel do tejto odpovede.",
+      "Úloha": "Táto _________ _________ _________ _________ nekonzistentnými stavmi tým, že zabezpečuje, že všetky kroky transakcie sú vykonané spoločne alebo žiadny z nich.",
+      "Odpoved": "Táto vlastnosť chráni databázu pred nekonzistentnými stavmi tým, že zabezpečuje, že všetky kroky transakcie sú vykonané spoločne alebo žiadny z nich."
+    },
+    {
+      "Otazka": "Ako by sme mohli vysvetliť koncept, ktorý zaručuje, že databázové transakcie sú nedeliteľné? \n\n ◉ Odpovedzte na otázku a vyznačte hlavné body, ako keby ste ich kreslili na schéme.",
+      "Odpoved": "Ide o princíp, podľa ktorého sa transakcia považuje za jednotku práce, ktorá sa buď vykoná celá, alebo sa neuskutoční vôbec, čím sa zabraňuje čiastočným výsledkom."
+    },
+    {
+      "Otazka": "Prečo je nevyhnutné, aby databázové operácie boli vykonávané bez prerušení? \n\n ◉ Doplňte chýbajúce slová do odpovede.",
+      "Úloha": "Pretože _________ môže viesť _________ neúplným alebo _________ údajom, čo _________ mohlo spôsobiť _________ v systéme _________ stratu dát.",
+      "Odpoved": "Pretože prerušovanie môže viesť k neúplným alebo nesprávnym údajom, čo by mohlo spôsobiť chyby v systéme alebo stratu dát."
+    },
+    {
+      "Otazka": "Čo by sa mohlo stať, ak by sa databázové zmeny vykonávali len čiastočne? \n\n ◉ Dopíšte túto odpoveď do konca.",
+      "Úloha": "Mohlo by dôjsť k nekonzistentnosti dát, kde niektoré časti by boli aktualizované _________ _________ _________ _________ _________ _________ _________ _________ _________ _________ _________ _________",
+      "Odpoved": "Mohlo by dôjsť k nekonzistentnosti dát, kde niektoré časti by boli aktualizované a iné nie, čo by mohlo viesť k nesprávnym výsledkom alebo chybám."
+    },
+    {
+      "Otazka": "Ako sa nazýva vlastnosť, ktorá zabezpečuje, že transakcia je buď úplne úspešná, alebo úplne neúspešná? \n\n ◉ nkrem tejto odpovede zapíšte všetky informácie, ktoré si k tejto téme pamätáte.",
+      "Odpoved": "Táto vlastnosť sa nazýva atomicita a je jednou zo základných vlastností transakcií v databázach."
+    },
+    {
+      "Otazka": "Aký je vzťah medzi vlastnosťou, ktorá zabezpečuje nedeliteľnosť transakcií, a integritou dát? \n\n ◉ Prečítajte si odporúčanú literatúru ešte raz a osviežte si svoje vedomosti.",
+      "Odpoved": "Nedeliteľnosť transakcií prispieva k integrite dát tým, že zabraňuje vzniku čiastočných alebo nekonzistentných zmien v databáze."
+    }
+  ],
+  "sources": [
+    "uploads/data/02-ERD.pdf:4:0",
+    "uploads/data/02-ERD.pdf:15:0",
+    "uploads/data/02-ERD.pdf:12:0"
+  ]
+}

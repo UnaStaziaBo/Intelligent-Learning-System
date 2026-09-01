@@ -1,0 +1,266 @@
+.students-wrapper {
+    width: 100%;
+    min-height: calc(100vh - 215px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem 2.5rem;
+    box-sizing: border-box;
+}
+
+.students-card {
+    max-width: 460px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    padding: 2rem 2.4rem 2.4rem;
+    text-align: center;
+}
+
+.students-title {
+    margin: 0 0 1.4rem 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+
+.students-search-row {
+    margin-bottom: 1.5rem;
+}
+
+.students-search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 999px;
+    border: 1px solid #9bb598;
+    background-color: #ffffff;
+}
+
+.students-search-icon {
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+.students-search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 0.95rem;
+    width: 100%;
+    font-family: inherit;
+}
+
+
+.students-item input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    border: 1.8px solid #333;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.students-item input[type="checkbox"]:checked {
+    background-color: #333;
+    border-color: #333;
+}
+
+.students-item input[type="checkbox"]:checked::after {
+    content: "✔";
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -57%);
+}
+
+
+.students-list-wrapper {
+    max-height: 260px;
+    overflow: auto;
+    border-radius: 14px;
+    border: 1px solid #d0dacb;
+    background-color: #f8fbf6;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.students-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.students-item + .students-item {
+    margin-top: 0.35rem;
+}
+
+.students-item label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.95rem;
+}
+
+.students-item input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+
+
+.students-empty {
+    font-size: 0.9rem;
+    color: var(--color--muted);
+}
+
+.students-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+}
+
+.students-generate-btn {
+    border-radius: 999px;
+    padding: 0.6rem 2.2rem;
+    border: 1px solid var(--color--accent);
+    background-color: var(--color--primary-white);
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.students-generate-btn:hover {
+    background-color: #f4f6f2;
+}
+
+.students-processing-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.68);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.students-processing-card {
+    width: min(420px, 92vw);
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+    padding: 22px 20px 18px;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.06);
+}
+
+.students-processing-gif {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 12px;
+}
+
+.students-processing-title {
+    font-size: 1.05rem;
+    font-weight: 650;
+    margin-bottom: 6px;
+}
+
+.students-processing-subtitle {
+    font-size: 0.92rem;
+    color: rgba(0,0,0,0.70);
+    margin-bottom: 10px;
+}
+
+.students-processing-note {
+    font-size: 0.85rem;
+    color: rgba(0,0,0,0.55);
+}
+
+
+@media (max-width: 600px) {
+    .students-card {
+        padding: 1.8rem 1.4rem 2rem;
+    }
+}
+
+
+.student-card-link {
+    font-size: 0.85rem;
+    color: var(--color--muted);
+    margin: 0.25rem 0 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    cursor: default;
+}
+
+.student-card-link::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background-color: #9bb598;
+    margin-right: 0.4rem;
+    transform: translateY(-1px);
+}
+
+.student-card-status {
+    font-weight: 500;
+    color: #4f6e43;
+}
+
+
+.results-demo-toggle {
+    margin-left: 1rem;
+    border-radius: 999px;
+    padding: 0.4rem 1.4rem;
+    border: 1px solid var(--color--accent);
+    background-color: var(--color--primary-white);
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.results-demo-toggle:hover {
+    background-color: #f4f6f2;
+}
+
+
+.results-demo {
+    margin-bottom: 1.8rem;
+    padding: 1.3rem 1.5rem;
+    border-radius: 14px;
+    background-color: rgba(245, 249, 242, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+}
+
+.results-demo-title {
+    margin: 0 0 0.6rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.results-demo-body {
+    max-height: 160px;
+    overflow-y: auto;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--color--primary-black);
+}

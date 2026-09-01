@@ -1,0 +1,482 @@
+{
+    "menu": {
+        "logo": "Vzdelávací inteligentný systém",
+        "login": "Prihlásiť sa",
+        "logout": "Odhlásiť sa",
+        "toggleThemeTitle": "Prepnúť tému",
+        "toggleThemeAria": "Prepnúť tému"
+    },
+    "index": {
+        "heroTitle": "Vzdelávací inteligentný systém",
+        "heroSubtitle": "INTELIGENTNÝ SYSTÉM PRE PERSONALIZOVANÉ VZDELÁVACIE MATERIÁLY",
+        "welcome": "Vitajte v systéme!",
+        "iAmTeacher": "Som pedagóg",
+        "iAmStudent": "Som študent",
+        "featuresTitle": "Čo nájdem v systéme?",
+        "faqTitle": "Často kladené otázky",
+        "faqSubtitle": "",
+        "reviewsTitle": "Recenzie"
+    },
+
+    "footer": {
+        "brand": "Vzdelávací inteligentný systém",
+        "discover": {
+            "title": "Objavte",
+            "links": "Užitočné odkazy",
+            "resources": "Študijné zdroje",
+            "examples": "Príklady úloh"
+        },
+        "system": {
+            "title": "Systém",
+            "intro": "Úvod",
+            "createTasks": "Vytvárať úlohy",
+            "doTasks": "Plniť úlohy"
+        }
+    },
+
+    "studentAccess": {
+    "title": "Prístup k materiálom",
+    "fields": {
+      "batch": {
+        "label": "Kód testu",
+        "placeholder": "napr. 518ec61f-3b62-4067-ba00-89433f8258d4",
+        "hint": "Tento kód vám pošle učiteľ (alebo je už v odkaze)."
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "napr. meno.priezvisko@uni.sk"
+      },
+      "pin": {
+        "label": "PIN skupiny",
+        "placeholder": "napr. K8F2Q9"
+      }
+    },
+    "submit": "Zobraziť materiály",
+    "loading": "Načítavam...",
+    "ready": "Materiály sú pripravené.",
+    "helloNamed": "Ahoj, {{name}}!",
+    "actions": {
+      "openPdf": "Otvoriť PDF",
+      "notes": "Poznámky",
+      "tasks": "Úlohy",
+      "notesNotReady": "Poznámky zatiaľ nie sú pripravené",
+      "tasksNotReady": "Úlohy zatiaľ nie sú pripravené"
+    },
+    "meta": {
+      "batch": "Batch:",
+      "stem": "Stem:"
+    },
+    "errors": {
+      "batchRequired": "Zadajte kód testu (batch ID).",
+      "emailInvalid": "Zadajte platný email.",
+      "pinTooShort": "Zadajte PIN (min. 4 znaky).",
+      "accessFailed": "Nepodarilo sa získať prístup.",
+      "serverConnection": "Chyba pri pripojení k serveru."
+    }
+  },
+
+  "walkthrough": {
+    "actions": {
+      "back": "Späť",
+      "next": "Ďalej",
+      "start": "Začať"
+    },
+    "teacher": {
+      "header": "Návod na používanie",
+      "picker": {
+        "chooseCsvType": "Vyberte typ CSV",
+        "moodle": {
+          "title": "Moodle export",
+          "hint": "Štandardný report po teste."
+        },
+        "custom": {
+          "title": "Iný CSV formát",
+          "hintBefore": "Realizujte testovanie pomocou pripraveného",
+          "linkText": "formulára Google"
+        }
+      },
+      "slides": {
+        "intro": {
+          "title": "Vitajte v systéme",
+          "p1": "Tento modul pomáha študentom pripraviť sa na",
+          "p1Bold": "opravný test",
+          "p1After": "na základe výsledkov predchádzajúceho testu a učebných materiálov.",
+          "p2": "Vy ako vyučujúci nahráte súbory, systém vytvorí personalizované úlohy a študenti sa môžu cielene pripravovať."
+        },
+        "howto": {
+          "title": "Čo budete potrebovať",
+          "p1": "Pripravte si:",
+          "list": {
+            "csvBold": "CSV",
+            "csvText": "s výsledkami testu (export z Moodle alebo iný formát)",
+            "materialsBold": "Materiály",
+            "materialsText": "z ktorých bol test vytvorený"
+          },
+          "p2": "Potom vyberiete študentov a systém pre nich vygeneruje materiály."
+        },
+        "picker": {
+          "title": "Vyberte typ CSV",
+          "p1": "Aby systém správne spracoval údaje, zvoľte formát CSV, ktorý budete nahrávať.",
+          "p2": "(Neskôr to môžete zmeniť opätovným nahratím CSV.)"
+        },
+        "customInfo": {
+          "title": "Testovanie cez Google Formulár",
+          "p1": "Ak ste zvolili možnosť",
+          "p1Bold": "Iný CSV formát",
+          "p1After": "môžete použiť pripravený",
+          "linkText": "Google formulár",
+          "warning": "Pozor! Nemeníte štruktúru súboru: priezvisko, meno a mail študenta.",
+          "steps": {
+            "1": "1) Otvorte šablónu a vytvorte si kópiu",
+            "2": "2) Doplňte otázky / správne odpovede",
+            "3": "3) Po vyplnení študentmi exportujte výsledky do CSV a nahrajte ich sem"
+          }
+        }
+      }
+    }
+  },
+
+  "teacherUpload": {
+    "title": "Vitajte!",
+    "subtitle": "Nahrajte výsledky študentov (.csv) a učebné materiály",
+    "chooseFiles": "Vyberte súbory",
+    "orDragHere": "alebo ich sem pretiahnite",
+    "supported": "Podporované: .csv, .pdf",
+    "generate": "Generovať",
+    "processing": "Spracovávame materiály…",
+    "remove": "Odstrániť",
+    "needCsvHintPrefix": "Nahrajte prosím",
+    "needCsvHintBold": "1× CSV",
+    "needCsvHintSuffix": "s výsledkami. Materiálov môžete pridať viac.",
+    "errors": {
+      "csvRequired": "Nahrajte prosím .csv s výsledkami študentov.",
+      "uploadGeneric": "Nepodarilo sa nahrať súbory.",
+      "uploadFailed": "Upload failed (HTTP {{status}})"
+    }
+  },
+
+  "teacherStudents": {
+    "title": "Vyberte študenta",
+    "searchPlaceholder": "Zadajte Meno Priezvisko",
+    "searchAria": "Vyhľadávanie študentov",
+    "loading": "Načítavam...",
+    "empty": "Nenašli sme žiadneho študenta.",
+    "home": "Hlavná stránka",
+    "generate": "Generovať",
+    "processingAlt": "Spracovanie",
+    "processingTitle": "Spracovávame materiály...",
+    "stages": {
+        "filtering": "Filtrujeme zoznam študentov…",
+        "starting": "Spúšťame generovanie…",
+        "waitFirst": "Čakáme na prvý výsledok"
+    },
+    "errors": {
+        "missingBatchId": "Chýba batchId v URL.",
+        "loadFailed": "Nepodarilo sa načítať zoznam študentov.",
+        "selectAtLeastOne": "Vyberte aspoň jedného študenta.",
+        "generationFailed": "Generovanie zlyhalo."
+    }
+  },
+
+  "teacherResults": {
+    "title": "Výsledky pre študentov",
+    "loading": "Načítavam...",
+    "searchPlaceholder": "Zadajte Meno Priezvisko",
+    "searchAria": "Vyhľadávanie výsledkov",
+    "errors": {
+      "missingBatchId": "Chýba batchId v URL.",
+      "loadFailed": "Nepodarilo sa načítať výsledky."
+    },
+
+    "access": {
+      "pinLabel": "PIN",
+      "pinPlaceholder": "Zadajte PIN alebo ho vygenerujte",
+      "pinAria": "PIN pre študentov",
+      "generatePin": "Vygenerovať PIN",
+      "generatePinTitle": "Vygeneruje nový PIN",
+      "savePin": "Uložiť PIN",
+      "savePinTitle": "Uloží alebo prepíše PIN pre tento batch",
+      "pinHint": "PIN je potrebný pre vstup študentov (4–12 znakov, bez medzier).",
+      "linkLabel": "Odkaz pre študentov",
+      "linkHint": "Skopírujte prístup a pošlite ho študentom.",
+      "copyAccess": "Kopírovať prístup (PIN + odkaz)",
+      "needPinTitle": "Najprv nastav PIN",
+      "copyText": {
+        "link": "Odkaz",
+        "pin": "PIN"
+      }
+    },
+
+    "pin": {
+      "validationError": "PIN musí mať 4–12 znakov a nesmie obsahovať medzery.",
+      "loadFailed": "Nepodarilo sa načítať PIN.",
+      "saveFailed": "Nepodarilo sa uložiť PIN.",
+      "generateFailed": "Nepodarilo sa vygenerovať PIN."
+    },
+
+    "status": {
+      "running": "Spracovávame materiály… výsledky sa budú pridávať automaticky.",
+      "done": "Generovanie dokončené.",
+      "errorPrefix": "Chyba pri generovaní:",
+      "unknown": "neznáma chyba"
+    },
+
+    "cards": {
+      "notes": "Poznámky",
+      "tasks": "Úlohy"
+    },
+
+    "demo": {
+      "titleNotes": "Demoverzia (poznámky) – {{name}}",
+      "titleTasks": "Demoverzia (úlohy) – {{name}}",
+      "fallbackTitle": "Poznámky – {{name}}",
+      "loading": "Načítavam…",
+      "loadFailed": "Nepodarilo sa načítať demoverziu.",
+      "noData": "Žiadne dáta ({{kind}}) pre tohto študenta.",
+      "close": "Zavrieť demoverziu"
+    },
+
+    "tasks": {
+      "empty": "Žiadne úlohy v súbore.",
+      "taskNo": "Úloha #{{n}}",
+      "labels": {
+        "question": "Otázka",
+        "task": "Úloha",
+        "answer": "Odpoveď"
+      }
+    },
+
+    "notes": {
+      "invalid": "Neplatný formát poznámok.",
+      "defaultTitle": "Poznámky",
+      "sectionsCount": "Sekcie: {{n}}",
+      "sectionFallback": "Sekcia {{n}}",
+      "labels": {
+        "sources": "Zdroje",
+        "callout": "Callout",
+        "notes": "Poznámky",
+        "bullets": "Body",
+        "terms": "Pojmy",
+        "recommendations": "Odporúčania",
+        "conclusion": "Záver"
+      }
+    },
+
+    "footer": {
+      "survey": "Vyplniť dotazník",
+      "generateAgain": "Generovať znova"
+    },
+
+    "accessWalkthrough": {
+      "header": "Nastavenie prístupu pre študentov",
+      "hide": "Skryť",
+      "step": "Krok {{current}} z {{total}}",
+      "generate": {
+        "title": "Vygenerujte PIN",
+        "text": "Vytvorte nový PIN kód pre študentov. Potom ho budete môcť uložiť."
+      },
+      "save": {
+        "title": "Uložte PIN",
+        "text": "Skontrolujte vygenerovaný PIN a uložte ho, aby ho študenti mohli použiť."
+      },
+      "copy": {
+        "title": "Skopírujte prístupové údaje",
+        "text": "Skopírujte odkaz pre študenta spolu s PIN kódom a pošlite ich študentom."
+      }
+    }
+  },
+
+  "studentTasks": {
+    "loading": "Načítavam úlohy…",
+    "backToRecommendations": "Späť na odporúčania",
+    "empty": "Zatiaľ tu nie sú žiadne úlohy (tasks JSON je prázdny).",
+
+    "errors": {
+        "missingBatch": "Chýba batch v URL (napr. ?batch=xxxx).",
+        "noResults": "Nenašli sa výsledky pre tento batch (results je prázdny).",
+        "writeAnswerFirst": "Najprv napíšte odpoveď"
+    },
+
+    "done": {
+        "title": "Hotovo",
+        "text": "Gratulujem! Všetky úlohy sú splnené. Vyplňte prosím dotazník.",
+        "survey": "Vyplniť dotazník",
+        "restart": "Prejsť znova",
+        "viewRecommendations": "Pozrieť odporúčania"
+    },
+
+    "taskCounter": "Úloha {{id}} / {{total}}",
+
+    "labels": {
+        "myAnswer": "Moja odpoveď",
+        "answer": "Odpoveď"
+    },
+
+    "placeholders": {
+        "myAnswer": "Napíšte svoju odpoveď..."
+    },
+
+    "actions": {
+        "submitAnswer": "Odpoveď",
+        "nextQuestion": "Ďalšia otázka",
+        "viewRecommendations": "Pozrieť odporúčania"
+    },
+
+    "rating": {
+        "title": "Sebahodnotenie",
+        "hint": "Pri hodnotení 8–10 sa úloha označí ako splnená",
+        "counter": "{{rating}} / 10",
+        "submit": "Ohodnotiť",
+        "needRatingTitle": "Vyberte hodnotenie",
+        "aria": "Sebahodnotenie (1 až 10)",
+        "starAria": "Hodnotenie {{value}} z 10",
+        "starTitle": "Nastaviť {{value}}"
+    },
+
+    "aria": {
+        "myAnswer": "Pole pre moju odpoveď",
+        "toggleMascot": "Zobraziť / skryť maskota",
+        "prev": "Predchádzajúca úloha",
+        "next": "Nasledujúca úloha"
+    },
+
+    "mascotAlt": "Motivačný pomocník"
+    },
+
+    "recommendations": {
+        "title": "Odporúčané materiály",
+        "studentFallback": "Študent",
+
+        "actions": {
+            "openPdf": "Otvoriť PDF",
+            "startTasks": "Začať úlohy",
+            "rateSheet": "Ohodnotiť celý list",
+            "home": "Hlavná stránka"
+        },
+
+        "meta": {
+            "batch": "Batch:",
+            "stem": "Stem:"
+        },
+
+        "conclusion": {
+            "title": "Záver"
+        },
+
+        "hints": {
+            "pdfNotAvailable": "PDF URL nie je dostupné",
+            "loginFirst": "Najprv sa prihláste cez StudentAccess"
+        },
+
+        "errors": {
+            "missingBatch": "Chýba batchId v URL (napr. ?batch=xxxx).",
+            "missingStem": "Chýba stem. Najprv sa prihláste cez stránku študenta (StudentAccess).",
+            "generationFailed": "Generovanie zlyhalo",
+            "timeout": "Generovanie trvalo príliš dlho (stav sa nezmenil na done).",
+            "notesNotReady": "Poznámky zatiaľ nie sú pripravené (alebo sa nedajú načítať)."
+        },
+
+        "running": {
+            "title": "Spracovávame materiály...",
+            "stage": "Prosím počkajte, generujeme odporúčania…",
+            "pleaseWait": "Prosím počkajte…",
+            "alt": "Processing"
+        },
+
+        "rating": {
+            "title": "Celkové hodnotenie listu",
+            "aria": "Hodnotenie (1 až 5)",
+            "starAria": "Hodnotenie {{value}} z 5",
+            "starTitle": "Nastaviť {{value}}",
+            "placeholder": "Napíšte krátky komentár k celému listu (nepovinné)",
+            "commentAria": "Komentár k hodnoteniu (nepovinné)",
+            "needRatingTitle": "Vyberte hodnotenie",
+            "submit": "Odoslať hodnotenie",
+            "cancel": "Zrušiť",
+            "thanks": "Ďakujeme! Vaše hodnotenie bolo odoslané"
+        }
+    },
+
+  "features": {
+    "f1": {
+      "title": "Vytváranie materiálov",
+      "subtitle": "Nahrajte materiály do systému a vytvorte úlohy s odporúčaniami"
+    },
+    "f2": {
+      "title": "Učebné teórie",
+      "subtitle": "Princíp úloh bol vypracovaný v súlade so základmi vzdelávacích teórií"
+    },
+    "f3": {
+      "title": "Dodatočné otázky",
+      "subtitle": "Každá úloha má doplnky. Snažte sa ich čo najkomplexnejšie spracovať"
+    },
+    "f4": {
+      "title": "Personalizácia",
+      "subtitle": "Zohľadnenie potrieb každého jednotlivca. Aj tie najťažšie témy budú zrozumiteľné"
+    },
+    "f5": {
+      "title": "Kvalitné zapamätanie",
+      "subtitle": "Prepracujte úlohy, ktoré robili problémy, a uložte si ich do dlhodobej pamäti"
+    }
+  },
+  "faq": {
+    "q1": {
+      "question": "Ako funguje tento vzdelávací systém?",
+      "answer": "Systém spája teóriu, príklady a interaktívne úlohy. Môžete sa učiť vlastným tempom a vracať sa k témam, ktoré potrebujete precvičiť."
+    },
+    "q2": {
+      "question": "Je systém vhodný aj pre úplných začiatočníkov?",
+      "answer": "Áno. Systém bol navrhnutý tak, aby ho mohol používať každý."
+    },
+    "q3": {
+      "question": "Môžem používať systém aj ako pedagóg?",
+      "answer": "Pedagógovia môžu vytvárať vlastné sady úloh a pridávať vlastné materiály."
+    },
+    "q4": {
+      "question": "Potrebujem niečo inštalovať?",
+      "answer": "Nie, všetko funguje priamo v prehliadači."
+    }
+  },
+  "reviews": {
+    "r1": {
+      "title": "Výborný prístup",
+      "text": "Pomohlo mi to pochopiť tému oveľa rýchlejšie.",
+      "name": "Jana K.",
+      "date": "12. november 2026"
+    },
+    "r2": {
+      "title": "Profesionálna výučba",
+      "text": "Objasnil každému študentovi, čo potreboval.",
+      "name": "Martin B.",
+      "date": "3. november 2026"
+    },
+    "r3": {
+      "title": "Veľmi dobré vysvetlenie",
+      "text": "Všetko je vysvetlené jednoducho a jasne.",
+      "name": "Lucia P.",
+      "date": "5. november 2026"
+    },
+    "r4": {
+      "title": "Skvelá podpora",
+      "text": "Dostala som odpoveď na otázky rýchlo a jasne.",
+      "name": "Petra M.",
+      "date": "18. september 2026"
+    },
+    "r5": {
+      "title": "Pomohlo udržať pozornosť",
+      "text": "Interaktívne úlohy ma donútili premýšľať.",
+      "name": "Tomáš R.",
+      "date": "9. február 2026"
+    },
+    "r6": {
+      "title": "Úžasný prístup",
+      "text": "Učenie bolo zábavné aj efektívne.",
+      "name": "Veronika L.",
+      "date": "1. december 2026"
+    }
+  },
+  "lang": {
+    "sk": "SK",
+    "uk": "UA"
+  }
+}

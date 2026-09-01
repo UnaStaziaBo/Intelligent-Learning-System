@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "Otazka": "Ako pomáha entitno-relačný model pri organizovaní údajov? \n\n ◉ Odpovedzte čo najsprávnejšie, všetko vyjde!",
+      "Odpoved": "Entitno-relačný model umožňuje jasne definovať objekty a ich vzájomné väzby, čím uľahčuje štruktúrovanie a pochopenie údajov."
+    },
+    {
+      "Otazka": "Prečo je grafické znázornenie dôležité pri modelovaní dát? \n\n ◉ Po svojej odpovedi prečítajte správnu odpoveď rýchlejšie, pomalšie, so záujmom, s iróniou, šeptom.",
+      "Odpoved": "Grafické znázornenie pomáha vizualizovať komplexné vzťahy medzi objektmi, čo zjednodušuje komunikáciu medzi vývojármi a používateľmi."
+    },
+    {
+      "Otazka": "Aké základné prvky obsahuje konceptuálny model údajov? \n\n ◉ Odpovedzte na otázku a potom vymyslite jedno slovo, ktoré najlepšie vystihuje túto tému.",
+      "Odpoved": "Konceptuálny model zahŕňa entity, ich atribúty a vzťahy medzi nimi, ktoré reprezentujú reálny svet v databáze."
+    },
+    {
+      "Otazka": "Ako prispieva entitno-relačný model k efektívnejšiemu návrhu databáz? \n\n ◉ Odpoveď používajte iba ako základ, potom doplňte popis sami.",
+      "Odpoved": "Model umožňuje oddeliť údaje od procesov, čo vedie k prehľadnejšej a flexibilnejšej štruktúre databázy."
+    },
+    {
+      "Otazka": "Čo znamená transformácia entitno-relačného modelu do relačného modelu? \n\n ◉ Obnovte informačný rozdiel do tejto odpovede.",
+      "Úloha": "Ide _________ _________ _________ _________ modelu objektov a vzťahov do tabuľkovej formy, ktorá sa používa v relačných databázach.",
+      "Odpoved": "Ide o proces prevodu grafického modelu objektov a vzťahov do tabuľkovej formy, ktorá sa používa v relačných databázach."
+    },
+    {
+      "Otazka": "Ako entitno-relačný model zjednodušuje učenie sa databázového návrhu? \n\n ◉ Odpovedzte na otázku a vyznačte hlavné body, ako keby ste ich kreslili na schéme.",
+      "Odpoved": "Vďaka malej množine základných pojmov a intuitívnemu grafickému zápisu je model rýchlo pochopiteľný aj pre začiatočníkov."
+    },
+    {
+      "Otazka": "V čom spočíva výhoda separácie údajov od aktivít v databázach? \n\n ◉ Doplňte chýbajúce slová do odpovede.",
+      "Úloha": "Táto _________ umožňuje lepšiu _________ dát a _________ pri zmene _________ bez nutnosti _________ samotné údaje.",
+      "Odpoved": "Táto separácia umožňuje lepšiu správu dát a flexibilitu pri zmene procesov bez nutnosti meniť samotné údaje."
+    },
+    {
+      "Otazka": "Prečo je dôležité reprezentovať štruktúry reálneho sveta v databázach? \n\n ◉ Dopíšte túto odpoveď do konca.",
+      "Úloha": "Presná reprezentácia reálneho sveta zabezpečuje, že databáza bude _________ _________ _________ _________ _________ _________ _________ _________",
+      "Odpoved": "Presná reprezentácia reálneho sveta zabezpečuje, že databáza bude relevantná a použiteľná pre konkrétne aplikácie a potreby."
+    },
+    {
+      "Otazka": "Ako entitno-relačný model podporuje integritu dát? \n\n ◉ nkrem tejto odpovede zapíšte všetky informácie, ktoré si k tejto téme pamätáte.",
+      "Odpoved": "Model umožňuje definovať vzťahy a pravidlá medzi entitami, čím pomáha udržiavať konzistentnosť a správnosť údajov."
+    },
+    {
+      "Otazka": "Aký význam má použitie rôznych notácií pri modelovaní údajov? \n\n ◉ Prečítajte si odporúčanú literatúru ešte raz a osviežte si svoje vedomosti.",
+      "Odpoved": "Rôzne notácie poskytujú alternatívne spôsoby vizualizácie a zdôrazňujú rôzne aspekty modelu podľa potrieb používateľov."
+    }
+  ],
+  "sources": [
+    "uploads/data/02-ERD.pdf:22:0",
+    "uploads/data/03-RM.pdf:26:0",
+    "uploads/data/02-ERD.pdf:3:0"
+  ]
+}

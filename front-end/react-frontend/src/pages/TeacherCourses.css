@@ -1,0 +1,132 @@
+.teacher-courses-section {
+    width: 100%;
+    min-height: calc(100vh - 215px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 1.5rem 2.5rem;
+    box-sizing: border-box;
+}
+
+.teacher-courses-panel {
+    width: 100%;
+    max-width: 1100px;
+    background-color: rgba(174, 197, 157, 0.3);
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    padding: 2rem 2.5rem 2.5rem;
+}
+
+.teacher-courses-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0 0 1.5rem 0;
+    text-align: center;
+}
+
+.teacher-courses-search-wrapper {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+}
+
+.teacher-courses-search {
+    width: 100%;
+    padding: 0.75rem 1.4rem;
+    border-radius: 999px;
+    border: 1px solid #9bb598;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.teacher-courses-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.teacher-course-card {
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    padding: 1.3rem 1.4rem;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.teacher-course-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.teacher-course-card h3 {
+    margin: 0 0 0.6rem 0;
+    font-size: 1.15rem;
+}
+
+.teacher-course-card p {
+    margin: 0;
+    color: #777;
+    line-height: 1.4;
+}
+
+.teacher-courses-empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #777;
+    font-size: 0.95rem;
+}
+
+.teacher-courses-footer {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.teacher-courses-home-btn {
+    padding: 0.7rem 1.8rem;
+    border-radius: 999px;
+    border: none;
+    background-color: white;
+    color: #1E1E1E;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.tasks-primary-button:disabled {
+    opacity: 0.45;
+    cursor: default;
+}
+
+
+
+@media (max-width: 900px) {
+    .teacher-courses-panel {
+        padding: 1.8rem 1.6rem 2rem;
+    }
+
+    .teacher-courses-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .teacher-courses-section {
+        padding: 1.5rem 1rem 1.8rem;
+        min-height: calc(100vh - 230px);
+    }
+
+    .teacher-courses-panel {
+        padding: 1.5rem 1.2rem 1.8rem;
+    }
+
+    .teacher-courses-grid {
+        grid-template-columns: 1fr;
+    }
+}

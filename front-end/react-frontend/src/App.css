@@ -1,0 +1,13 @@
+.app-background {
+    position: relative;
+    background-image: url("./assets/system_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    min-height: 100vh;
+  }
+  
+  body.dark .app-background {
+    background-image: url("./assets/system_background_dark.png");
+  }
+  
